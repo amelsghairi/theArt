@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Art</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Style.css">
+   <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <!-- Modal Inscription -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="insc">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel"> Création de mon compte membre</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="well well-sm">
+            <div class="form-group">
+               <label for="exampleInputName1"><span class="glyphicon glyphicon-asterisk ét"></span> Votre nom :</label>
+               <input type="text" class="form-control inp" id="exampleInputName1" placeholder="Nom">
+            </div>
+     
+            <div class="form-group">
+               <label for="exampleInputFirstname1"><span class="glyphicon glyphicon-asterisk ét"></span> Votre prénom :</label>
+               <input type="text" class="form-control inp" id="exampleInputFirstname1" placeholder="Prénom">
+            </div>
+     
+            <div class="form-group">
+                 <label for="exampleInputEmail1"><span class="glyphicon glyphicon-asterisk ét"></span> Votre adresse e-mail :</label>
+                 <div class="input-group inp">
+                   <span class="input-group-addon" id="basic-addon1">@</span>
+                   <input type="text" class="form-control" placeholder="e-mail" aria-describedby="basic-addon1">
+                 </div>
+             </div>
+     
+             <div class="form-group">
+                 <label for="exampleInputPassword1"><span class="glyphicon glyphicon-asterisk ét"></span>  Votre mot de passe :</label> 
+                 <div class="input-group inp">
+                    <span class="input-group-addon" id="basic-addon1" ><span class="glyphicon glyphicon-lock" ></span> </span>
+                    <input type="password" class="form-control" placeholder="Passe" aria-describedby="basic-addon1">
+                 </div>
+                 <p style="color: firebrick;"> 8 caractères alphanumériques minimum.<br> Par sécurité, au moins 1 caractère spécial parmi ceux-ci :
+                    # { ^ @ = . , ; : $ % * ? ! + -</p>
+             </div>
+     
+             <div class="form-group">
+                 <label for="exampleInputPassword1"><span class="glyphicon glyphicon-asterisk ét"></span> Confirmez votre mot de passe :</label> 
+                 <div class="input-group inp">
+                     <span class="input-group-addon" id="basic-addon1" ><span class="glyphicon glyphicon-ok" ></span> </span>
+                     <input type="password" class="form-control " placeholder="Passe" aria-describedby="basic-addon1">
+                 </div>
+             </div>
+     
+           <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok"> Valider</span> </button>
+         </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal Connexion -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLongTitle"> Connexion à mon espace membre</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="well well-sm ">
+          <div class="form-group">
+            <label for="exampleInputEmail1"><span class="glyphicon glyphicon-asterisk ét"></span> Votre identifiant :</label>
+             <div class="input-group inp">
+               <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span> </span>
+               <input type="text" class="form-control" placeholder="Nom" aria-describedby="basic-addon1">
+             </div>
+          </div>
+                
+          <div class="form-group">
+              <label for="exampleInputPassword1"><span class="glyphicon glyphicon-asterisk ét"></span>  Votre mot de passe :</label> 
+              <div class="input-group inp">
+                <span class="input-group-addon" id="basic-addon1" ><span class="glyphicon glyphicon-lock" ></span> </span>
+                <input type="password" class="form-control" placeholder="Passe" aria-describedby="basic-addon1">
+              </div>
+            <p>Vous avez <a href="#" >oublié votre mot de passe ?</a>  <br>
+               Vous n'avez <a href="#" >pas reçu le mail de confirmation</a> de votre inscription ?
+            </p>
+          </div>
+    
+          <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-user"> Connexion</span></button>
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <header>
+  <nav class="menum navbar navbar-light navbar-expand-md justify-content-center fixed-top">
+    <img class="logo" src="Image/Logosabri.PNG" />
+
+  <div class="container">
+    <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+      <ul class="topBotomBordersOut navbar-nav mx-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link " href="index.html"> Exposition</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="Cours.html"> Cours</a> 
+        <li class="nav-item"> <a class="nav-link" href="Agendaexpo.html"> Agenda expo</a> 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-3 mr-lg-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user user"></i><span class="caret"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"data-toggle="modal" data-target="#exampleModal"> Inscription</a>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalCenter">  Connexion</a>
+          </div>
+      </li>
+      </ul>
+    </div>
+    </div>   
+  </nav>
+</header>
+  <img class="theart" src="Image/art.jpg">
+    <div class="color"><hr><h3> Lobna </h3><br>
+    <p><span class="glyphicon glyphicon-home"></span>  Galerie d'Art en ligne, vente de peinture </p><hr></div>
+   
+<!--Tableau-->
+<div class="container page-top hui">
+  <div class="row">
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a href="" class="fancybox" rel="ligthbox">
+              <img  src="Image/lob/ac2.jpg" class="zoom img-fluid "  alt="">
+             
+          </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a href=""  class="fancybox" rel="ligthbox">
+              <img  src="Image/lob/hu2.jpg" class="zoom img-fluid"  alt="">
+          </a>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a href="" class="fancybox" rel="ligthbox">
+              <img  src="Image/lob/hu3.jpg" class="zoom img-fluid "  alt="">
+          </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <a href=""  class="fancybox" rel="ligthbox">
+            <img  src="Image/lob/wate.jpg" class="zoom img-fluid"  alt="">
+        </a>
+    </div>
+    
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <a href="" class="fancybox" rel="ligthbox">
+            <img  src="Image/lob/wate1.jpg" class="zoom img-fluid "  alt="">
+        </a>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+    <script src="path_to_js_file/main.js"></script>
+</body>
+</html>
